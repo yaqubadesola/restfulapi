@@ -1,0 +1,11 @@
+create a new project
+define the structure
+connect to db
+create the api routes
+create the api controllers and make it simple - KISS(Keep It Simple ans Stupid)
+create a DB with any ORM of your  - mysql - sequelite ORM
+
+express
+sequelite
+body-parser
+mysql2

@@ -1,0 +1,10 @@
+const express = require('express')
+const userController = require('../controllers/userController')
+const userRouter = express.Router()
+userRouter.post('/login', userController.logIn)
+userRouter.post('/create', userController.create)
+userRouter.get('/refresh', userController.getRefreshToken)
+// userRouter.get('/:id', userController.readOne)
+// userRouter.put('/edit/:id', userController.edit)
+// userRouter.delete('/:id', userController.destroy)
+module.exports = userRouter

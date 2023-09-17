@@ -3,7 +3,7 @@ const postController = require('../controllers/postController')
 const postRouter = express.Router()
 postRouter.get('/', postController.index)
 postRouter.post('/create', postController.create)
-postRouter.get('/1', postController.readOne)
-postRouter.get('/edit/1', postController.edit)
-
+postRouter.get('/:id', postController.readOne)
+postRouter.put('/edit/:id', postController.edit)
+postRouter.delete('/:id', postController.destroy)
 module.exports = postRouter

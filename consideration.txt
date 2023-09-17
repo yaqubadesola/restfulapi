@@ -1,0 +1,21 @@
+- Install libraries
+
+jsonwebtoken
+cookie-parser
+dotenv
+
+- signup/reg route and controller
+- login/Sign after user is able to signIn you generate both access and refresh token and send to the response using secret key set in env file
+- This accesstoken will be used in subsequent api to validate user's credential
+
+usertable
+firstname, lastname, email, password, refreshToken
+
+
+Recreating a refresh token
+- get a refresh token from request cookies i.e req.cookies
+- extract a refresh token  and test
+- use it to fetch d user
+- verify the cookie's refresh token and check the decoded payload username with  database username then 
+- if the above match then sign new access token
+
